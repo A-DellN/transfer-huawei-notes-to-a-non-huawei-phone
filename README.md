@@ -39,7 +39,7 @@ To import the .json file with your notes into QuilloNote put the output .json fi
 <pre>
 python jsonfyNotes.py "folder_path/notes.txt" folder_path/created.txt" "folder_path/modified.txt"
 
-Number of converted notes = 6
+Number of converted notes = 960
 </pre>
 
 
