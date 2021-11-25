@@ -1,4 +1,4 @@
-# transfer-huawei-notes-to-a-non-huawei-phone
+# transfer huawei notes to any other phone including android or iPhone ones
 transfer huawei notes to a non huawei phone without synchronizing the notes on huwawe cloud and without rooting your phone.
 
 
