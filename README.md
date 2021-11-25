@@ -8,7 +8,7 @@ ___
 
 
 
-By following the steps in this repo you will be able to export your notes directry to **[QuilloNotes](https://github.com/msoultanidis/quillnote)**, to **[Standard Notes](https://standardnotes.com/)** (this last has Windows and ios clients) or to any other note application by editing the python script code on this repo ~~(We are working on providing it also for **[Standard Notes](https://standardnotes.com/))**.~~✅
+By following the steps in this repo you will be able to export your notes directry to **[QuilloNotes](https://github.com/msoultanidis/quillnote)**, to **[Standard Notes](https://standardnotes.com/)** (this last has Windows and ios clients) or to any other note application by editing the python script code on this repo ~~(We are working on providing it also for **[Standard Notes](https://standardnotes.com/))**.~~ ✅
 
 
 - First of all you should make a huawei back up choosing the notes as one of the backedup items(or the only item).
