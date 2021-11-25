@@ -32,6 +32,8 @@ usage:python jsonfyNotes.py [quillo][standard] "PATH/notes.txt" "PATH/created.tx
 The arguments should be ordered as shown.
 </pre>
 
+_try python3 and python one of the two should work depending on your operation system_
+
 _Replace PATH with the path to the folder where the file is_
 
 **Export to Quillo Notes** 
