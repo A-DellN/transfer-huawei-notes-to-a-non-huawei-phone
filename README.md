@@ -21,8 +21,9 @@ By following the steps in this repo you will be able to export your notes direct
 -Seleect and copy all the elements of **modified** column and save them in a .txt file (call it modified.txt).
 
 
-At this point you should have 3 .txt files and you are ready to use the script that will convert your notes into a .json file compatible with **[QuilloNote](https://github.com/msoultanidis/quillnote)**
-Or a .txt file compatible with **[Standard Notes](https://standardnotes.com/)**
+At this point you should have 3 .txt files and you are ready to use the script that will convert your notes into a .json file compatible with **[QuilloNote](https://github.com/msoultanidis/quillnote)** or with **[Standard Notes](https://standardnotes.com/)**
+
+**If you are outside Italy remember to change the time zone in the code according to your local time zone before use** 
 
 ## Usage
 <pre>
@@ -37,19 +38,19 @@ _Replace PATH with the path to the folder where the file is_
 To import the .json file with your notes into QuilloNote put the output .json file into .zip file, send it to your phone and import it using the settings of QuilloNote app(since the app requires the file to be compressed inside .zip file).
 
 **Export to Standard Notes**
-To import the .txt file you will just need the .txt file as it is and import it directly from the settings of the app.
+Rename the .json output file to be with .txt file _(example: backup.txt)_ to import the .txt file you will just need the .txt file as it is and import it directly from the settings of the app.
 
 ## Example
 To Quillo Notes
 <pre>
-python jsonfyNotes.py Quillo "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
+python jsonfyNotes.py quillo "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
 >Number of converted notes = 960
 </pre>
 
 To Standard Notes
 <pre>
-python jsonfyNotes.py Standard "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
+python jsonfyNotes.py standard "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
 >Number of converted notes = 960
 </pre>
