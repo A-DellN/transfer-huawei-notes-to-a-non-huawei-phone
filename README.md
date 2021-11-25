@@ -8,7 +8,7 @@ ___
 
 
 
-By following the steps in this repo you will be able to export your notes directry to **[QuilloNotes](https://github.com/msoultanidis/quillnote)**, to **[Standard Notes](https://standardnotes.com/)** which has a windows and ios clients) or to any other note application by editing the python script code on this repo ~~(We are working on providing it also for **[Standard Notes](https://standardnotes.com/)**.~~ 
+By following the steps in this repo you will be able to export your notes directry to **[QuilloNotes](https://github.com/msoultanidis/quillnote)**, to **[Standard Notes](https://standardnotes.com/)** (this last has Windows and ios clients) or to any other note application by editing the python script code on this repo ~~(We are working on providing it also for **[Standard Notes](https://standardnotes.com/))**.~~ 
 
 
 - First of all you should make a huawei back up choosing the notes as one of the backedup items(or the only item).
@@ -16,7 +16,7 @@ By following the steps in this repo you will be able to export your notes direct
 - Once decrypted the backup go to *output_folder/data/data* you should find a file with name **Memo.db** open it with [DB Browser for SQLite](https://sqlitebrowser.org/) or any other db viewer.
 -In DB Browser for SQLite go to *Browse Data* and choose the table *comhuaweiproviderNotePadbackupnote_items_new_tb* or *comhuaweiproviderNotePadbackupnote_items_tb*.
 -Now select and copy all the elements of **content** column and save them in .txt file (call it notes.txt).
--Ensure that all the notes begin with "Text|" and not "Bullet|" or other similar things, if not you can delete these lines (importatnt to work with the script made otherwise you can edit it to consider other note types)
+-Ensure that all the notes begin with "Text|" and not "Bullet|" or other similar things, if not you can delete these lines (important to work with the script made otherwise you can edit it to consider other note types)
 -Select and copy all the elements of **created** column and save them in another .txt file (call it created.txt).
 -Seleect and copy all the elements of **modified** column and save them in a .txt file (call it modified.txt).
 
@@ -32,7 +32,7 @@ usage:python jsonfyNotes.py [quillo][standard] "PATH/notes.txt" "PATH/created.tx
 The arguments should be ordered as shown.
 </pre>
 
-_try python3 and python one of the two should work depending on your operation system_
+_try **python3** and **python** one of the two should work depending on your operation system_
 
 _Replace PATH with the path to the folder where the file is_
 
@@ -40,7 +40,7 @@ _Replace PATH with the path to the folder where the file is_
 To import the .json file with your notes into QuilloNote put the output .json file into .zip file, send it to your phone and import it using the settings of QuilloNote app(since the app requires the file to be compressed inside .zip file).
 
 **Export to Standard Notes**
-Rename the .json output file to be with .txt file _(example: backup.txt)_ to import the .txt file you will just need the .txt file as it is and import it directly from the settings of the app.
+Rename the .json output file to end with .txt _(example: backup.json --> backup.txt)_ to import the .txt file you will just need the .txt file as it is and import it directly from the settings of the app.
 
 ## Example
 To Quillo Notes
