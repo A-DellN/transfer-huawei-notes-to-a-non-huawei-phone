@@ -16,7 +16,6 @@ modificationFile = open(sys.argv[4])    #the file containing the modification ti
 
 
 ff = open("backup.json","w",encoding="utf-8")  #the output file
-#ff.write("{\"version\":4,\"notes\":")  #Initialization of output file in case of Quillnote
 
 
 i = 0
@@ -52,14 +51,6 @@ def standardN():
           "updated_at": "1970-01-01T00:00:00.000Z"
         }
 
-    i = 0
-    tempStr = ""
-    dic = {}
-    content_dic = {}
-
-    appData_dic = {}
-    update_info_dic = {}
-    list = []
 
     list.append(deepcopy(initializingdic))
 
@@ -128,10 +119,7 @@ def standardN():
 
 def quilloN():
     ff.write("{\"version\":4,\"notes\":")
-    i = 0
-    tempStr = ""
-    dic = {}
-    list = []
+    
     newReading = False
     for line in file:
         
