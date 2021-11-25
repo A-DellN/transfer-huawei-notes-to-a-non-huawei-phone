@@ -27,7 +27,7 @@ At this point you should have 3 .txt files and you are ready to use the script t
 
 ## Usage
 <pre>
-usage:python jsonfyNotes.py [Quillo][Standard] "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
+usage:python jsonfyNotes.py [quillo][standard] "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
 The arguments should be ordered as shown.
 </pre>
