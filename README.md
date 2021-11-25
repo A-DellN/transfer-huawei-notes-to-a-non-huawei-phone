@@ -1,4 +1,3 @@
-
 # transfer-huawei-notes-to-a-non-huawei-phone
 transfer huawei notes to a non huawei phone without synchronizing the notes on huwawe cloud and without rooting your phone.
 
@@ -9,7 +8,7 @@ ___
 
 
 
-By following the steps in this repo you will be able to export your notes directry to **[QuilloNotes](https://github.com/msoultanidis/quillnote)**, or to any other note application by editing the python script code on this repo *(We are working on providing it also for **[Standard Notes](https://standardnotes.com/)** which has a windows and ios clients).*
+By following the steps in this repo you will be able to export your notes directry to **[QuilloNotes](https://github.com/msoultanidis/quillnote)**, to **[Standard Notes](https://standardnotes.com/)** which has a windows and ios clients) or to any other note application by editing the python script code on this repo ~~(We are working on providing it also for **[Standard Notes](https://standardnotes.com/)**.~~ 
 
 
 - First of all you should make a huawei back up choosing the notes as one of the backedup items(or the only item).
@@ -22,24 +21,35 @@ By following the steps in this repo you will be able to export your notes direct
 -Seleect and copy all the elements of **modified** column and save them in a .txt file (call it modified.txt).
 
 
-At this point you should have 3 .txt files and you are ready to use the script that will convert your notes into a .json structure compatible with **[QuilloNote](https://github.com/msoultanidis/quillnote)**.
-
+At this point you should have 3 .txt files and you are ready to use the script that will convert your notes into a .json file compatible with **[QuilloNote](https://github.com/msoultanidis/quillnote)**
+Or a .txt file compatible with **[Standard Notes](https://standardnotes.com/)**
 
 ## Usage
 <pre>
-usage: jsonfyNotes.py "folder_path/notes.txt" folder_path/created.txt" "folder_path/modified.txt"
+usage:python jsonfyNotes.py [Quillo][Standard] "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
-The arguments should be in order as shown.
+The arguments should be ordered as shown.
 </pre>
 
-To import the .json file with your notes into QuilloNote put the output .json file into .zip file, send it to your phone and import it using the settings of QuilloNote app.
+_Replace Path With the path to the folder where the file is_
 
+**Export to Quillo Notes** 
+To import the .json file with your notes into QuilloNote put the output .json file into .zip file, send it to your phone and import it using the settings of QuilloNote app(since the app requires the file to be compressed inside .zip file).
+
+**Export to Standard Notes**
+To import the .txt file you will just need the .txt file as it is and import it directly from the settings of the app.
 
 ## Example
+To Quillo Notes
 <pre>
-python jsonfyNotes.py "folder_path/notes.txt" folder_path/created.txt" "folder_path/modified.txt"
+python jsonfyNotes.py Quillo "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
 Number of converted notes = 960
 </pre>
 
+To Standard Notes
+<pre>
+python jsonfyNotes.py Standard "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
+Number of converted notes = 960
+</pre>
