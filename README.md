@@ -31,7 +31,7 @@ usage:python jsonfyNotes.py [Quillo][Standard] "PATH/notes.txt" "PATH/created.tx
 The arguments should be ordered as shown.
 </pre>
 
-_Replace Path With the path to the folder where the file is_
+_Replace PATH with the path to the folder where the file is_
 
 **Export to Quillo Notes** 
 To import the .json file with your notes into QuilloNote put the output .json file into .zip file, send it to your phone and import it using the settings of QuilloNote app(since the app requires the file to be compressed inside .zip file).
@@ -44,12 +44,12 @@ To Quillo Notes
 <pre>
 python jsonfyNotes.py Quillo "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
-Number of converted notes = 960
+>Number of converted notes = 960
 </pre>
 
 To Standard Notes
 <pre>
 python jsonfyNotes.py Standard "PATH/notes.txt" "PATH/created.txt" "PATH/modified.txt"
 
-Number of converted notes = 960
+>Number of converted notes = 960
 </pre>
